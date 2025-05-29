@@ -11,14 +11,15 @@ struct MenuView: View {
     var body: some View {
         NavigationStack {
 
-            NavigationLink(destination: IMCView()) {
-                Text("IMC Calculator")
+            List {
+                NavigationLink(destination: IMCView()) {
+                    Text("IMC Calculator")
+                }
+                NavigationLink(destination: SuperheroSearcher()) {
+                    Text("SuperheroSearcher")
+                }
             }
 
-            VStack {
-                Text("App 2")
-                Text("App 3")
-            }
         }
     }
 }
